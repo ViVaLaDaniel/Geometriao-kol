@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Добавляем скрипт библиотеки Jarallax -->
+    <script src="https://cdn.jsdelivr.net/npm/jarallax@1.12.0/dist/jarallax.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet" />
@@ -33,8 +35,8 @@
       <div class="bg-white rounded-lg shadow-md p-4 md:p-6 lg:p-8 xl:p-10">
         <div class="flex justify-between flex-wrap md:flex-nowrap lg:flex-wrap xl:flex-nowrap">
           <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4">
-            <h2 class="font-bold mb-4 text-center text-2 md:text-3xl lg:text-6xl">Geometria kół Cena</h2>
-            <p class="text-sm md:text-xl lg:text-3xl text-center">
+            <h2 class="font-bold mb-4 text-center text-2xl md:text-3xl lg:text-6xl">Geometria kół Cena</h2>
+            <p class="text-base md:text-xl lg:text-3xl text-center">
               Kontrola zbieżności zazwyczaj kosztuje <span class="text-black font-bold">120 zł</span>, a w przypadku regulacji dodaje się <span class="text-black font-bold">40 zł</span> za każde koło,
               które wymaga ustawienia (regulacja zbieżności, pochylenia, kąta wyprzedzenia). <br />Czas wykonania geometrii kół w Poznaniu wynosi -
               <span class="text-black font-bold"> od 30 min</span>. <br /><span class="text-black font-bold">Koszt regulacji geometrii kół</span> zależy od liczby kół wymagających korekty w
@@ -45,10 +47,10 @@
       </div>
 
       <!--button contact start-->
-      <div class="mt-4 md:mt-6 lg:mt-8 xl:mt-10 text-center flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4">
+      <div class="mx-6 mt-4 md:mt-6 lg:mt-8 xl:mt-10 text-center flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4">
         <a
           href="tel:+48798773827"
-          class="bg-green-500 text-black-500 border-2 border-black-500 hover:bg-red-500 hover:text-white font-bold py-2 px-4 rounded inline-block w-full sm:w-auto transition duration-1000"
+          class="bg-green-500 text-black-500 border-2 border-black-500 hover:bg-red-500 hover:text-white font-bold py-4 px-4 rounded inline-block w-full sm:w-auto transition duration-1000"
         >
           Umów na Wizytę <i class="fas fa-phone-alt transition duration-1000 hover:text-white"></i>
         </a>
@@ -58,7 +60,7 @@
         <a
           href="https://www.google.com/maps/place/ROMAKS+warsztat+samochodowy/@52.4080279,16.7798512,17z/data=!3m1!4b1!4m5!3m4!1s0x470445a0f65ea4a1:0xb23d6bbd39f56e5f!8m2!3d52.4080279!4d16.7820372"
           target="_blank"
-          class="bg-white text-red-500 border-2 border-red-500 hover:bg-red-500 hover:text-white font-bold py-2 px-4 rounded inline-block w-full sm:w-auto transition duration-1000"
+          class="bg-white text-red-500 border-2 border-red-500 hover:bg-red-500 hover:text-white font-bold py-4 px-4 rounded inline-block w-full sm:w-auto transition duration-1000"
         >
           Mapa Dojazdu <i class="fa-regular fa-map transition duration-1000 hover:text-white"></i>
         </a>
@@ -66,47 +68,45 @@
       <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 md:p-6 lg:p-8 xl:p-10">
         <img src="./assets/geometria-kol.jpg" alt="giometri" class="h-full w-full object-cover" />
       </div>
-      <!--button map end-->
     </div>
+    <!--button map end-->
+
     <!--bloc-1 end-->
 
     <!--block-2  start-->
     <div class="container mx-auto p-2 mt-10 text-white">
       <div class="bg-white rounded-lg shadow-md p-4 md:p-6 lg:p-8 xl:p-10">
-        <h2 class="text-red-600 font-bold mb-4 text-center text-sm md:text-4xl lg:text-6xl">
+        <h2 class="text-red-600 font-bold mb-4 text-center text-lg md:text-4xl lg:text-6xl">
           Jakie są koszty związane z regulacją zbieżności kół <br />oraz całym procesem geometrii kół w przypadku samochodów <br class="" />osobowych?
         </h2>
 
-        <div class="w-full sm:w-3/4 lg:w-1/2 mx-auto flex items-start mb-4">
-          <i class="fa-solid fa-circle-check text-red-600 text-base mr-4"></i>
-          <p class="w-full text-left text-black text-sm md:text-xl lg:text-3xl">
-            Jednym z najczęściej zadawanych pytań przez naszych klientów podczas wyceny usług jest koszt zbieżności kół oraz geometrii kół. <br />
-            Dlatego przedstawiamy szczegółowy opis naszych usług związanych z geometrią kół oraz cennik.
-          </p>
-        </div>
+        <p class="w-full text-left text-black text-base text-center mb-4 md:text-xl lg:text-3xl">
+          Jednym z najczęściej zadawanych pytań przez naszych klientów podczas wyceny usług jest koszt zbieżności kół oraz geometrii kół. <br />
+          Dlatego przedstawiamy szczegółowy opis naszych usług związanych z geometrią kół oraz cennik.
+        </p>
 
         <div class="w-full sm:w-3/4 lg:w-1/2 mx-auto flex items-start mb-4">
           <i class="fa-solid fa-circle-check text-red-600 text-base mr-4"></i>
-          <p class="w-full text-left text-black text-sm md:text-xl lg:text-3xl">
+          <p class="w-full text-left text-black text-base md:text-xl lg:text-3xl">
             <span class="font-bold">Pomiar zbieżności oraz kąta pochylenia kół</span> (Usługa pomiaru zbieżności obejmuje wyłącznie testy, bez przeprowadzania pełnej geometrii kół, oraz przygotowania
             raportu z wynikami pomiarów zbieżności). - <span class="text-black font-bold">120 zł</span>
           </p>
         </div>
         <div class="w-full sm:w-3/4 lg:w-1/2 mx-auto flex items-start mb-4">
           <i class="fa-solid fa-circle-check text-red-500 text-base mr-4" style="color: #ff0000"></i>
-          <p class="w-full text-left text-black text-sm md:text-xl lg:text-3xl">
+          <p class="w-full text-left text-black text-base md:text-xl lg:text-3xl">
             <span class="font-bold text-red-600">Pomiar 3D to niezbędny krok, który należy wykonać przed przystąpieniem do regulacji geometrii kół.</span>
           </p>
         </div>
 
         <div class="w-full sm:w-3/4 lg:w-1/2 mx-auto flex items-start mb-4">
           <i class="fa-solid fa-circle-check text-red-600 text-base mr-4"></i>
-          <p class="w-full text-left text-black text-sm md:text-xl lg:text-3xl"><span> Regulacja i ustawienie geometrii jednego koła</span> - <span class="text-black font-bold">40 zł</span></p>
+          <p class="w-full text-left text-black text-base md:text-xl lg:text-3xl"><span> Regulacja i ustawienie geometrii jednego koła</span> - <span class="text-black font-bold">40 zł</span></p>
         </div>
 
         <div class="w-full sm:w-3/4 lg:w-1/2 mx-auto flex items-start mb-4">
           <i class="fa-solid fa-circle-check text-red-600 text-base mr-4"></i>
-          <p class="w-full text-left text-black text-sm md:text-xl lg:text-3xl">
+          <p class="w-full text-left text-black text-base md:text-xl lg:text-3xl">
             <span class="font-bold text-black">Zbieżność kół cena, oraz regulacja pochylenia - przednia oś</span> - (ustawiamy geometrie, oraz zbieżność 2 kół na przedniej osi) -
             <span class="text-black font-bold">80 zł</span>
           </p>
@@ -114,7 +114,7 @@
 
         <div class="w-full sm:w-3/4 lg:w-1/2 mx-auto flex items-start mb-4">
           <i class="fa-solid fa-circle-check text-red-600 text-base mr-4"></i>
-          <p class="w-full text-left text-black text-sm md:text-xl lg:text-3xl">
+          <p class="w-full text-left text-black text-base md:text-xl lg:text-3xl">
             <span class="font-bold text-black">Zbieżność kół cena, oraz regulacja pochylenia - tylna oś</span> - (ustawiamy geometrie, oraz zbieżność 2 kół na tylnej osi) -
             <span class="text-black font-bold">80 zł</span>
           </p>
@@ -122,7 +122,7 @@
 
         <div class="w-full sm:w-3/4 lg:w-1/2 mx-auto flex items-start mb-4">
           <i class="fa-solid fa-circle-check text-red-600 text-base mr-4"></i>
-          <p class="w-full text-left text-black text-sm md:text-xl lg:text-3xl">
+          <p class="w-full text-left text-black text-base md:text-xl lg:text-3xl">
             <span class="font-bold text-black">Geometria kół cena, regulacja zbieżności oraz pochylenia kół</span> - przód i tył - (ustawiamy geometrie, oraz zbieżność 4 koła na tylnej osi, przedniej
             osi) - <span class="text-black font-bold">160 zł</span>
           </p>
@@ -130,7 +130,7 @@
 
         <div class="w-full sm:w-3/4 lg:w-1/2 mx-auto flex items-start mb-4">
           <i class="fa-solid fa-circle-check text-red-600 text-base mr-4"></i>
-          <p class="w-full text-left text-black text-sm md:text-xl lg:text-3xl">
+          <p class="w-full text-left text-black text-base md:text-xl lg:text-3xl">
             <span class="text-red-600 font-bold"
               >Przy regulacji czterech kół (usługa obejmuje wykonania pomiaru, oraz ustawienia zbieżności kół i pochylenia kół) —
               <span class="text-red-600 font-bold text-xl md:text-xl lg:text-3xl">PROMOCYJNA CENA - 250 zł</span></span
@@ -140,7 +140,7 @@
 
         <div class="w-full sm:w-3/4 lg:w-1/2 mx-auto flex items-start mb-4">
           <i class="fa-solid fa-circle-check text-red-600 text-base mr-4"></i>
-          <p class="w-full text-left text-black text-sm md:text-xl lg:text-3xl">
+          <p class="w-full text-left text-black text-base md:text-xl lg:text-3xl">
             <span class="text-black font-bold">Wyprzedzenie kół</span> - regulacja wyprzedzenia - <span class="text-black font-bold">120 zł</span> za godzinę (koszt zależy od tego, ile czasu
             obsługiwany model samochodu wymaga na taką regulację).
           </p>
@@ -152,7 +152,7 @@
     <!--block-3 start -->
     <!--Задачаи Уникалезоровать Текс-->
     <div class="bg-white rounded-lg shadow-md p-4 md:p-6 lg:p-8 xl:p-10">
-      <h2 class="text-red-600 font-bold mb-4 text-center text-base md:text-4xl lg:text-6xl">ile kosztuje geometria kół Poznan</h2>
+      <h2 class="text-red-600 font-bold mb-4 text-center text-lg md:text-4xl lg:text-6xl">ile kosztuje geometria kół Poznan</h2>
       <div>
         <p>
           Jesteś ciekaw ile kosztuje geometria kół i ustawienie zbieżności kół w naszym warsztacie koszt nie będzie próść w zależności od marki i modelu samochodu. Ogównie jednak, nasze ceny wahają
@@ -167,7 +167,7 @@
     <div class="flex items-center border-l-8 border-sky-500 bg-gray-100 p-4 shadow-md mr-4 ml-4 my-4">
       <div class="ml-4">
         <h2 class="text-lg font-bold">Geometria kół cennik jest stały dla wszystkich</h2>
-        <p class="text-gray-600">
+        <p class="text-black">
           Nasz warsztat oferuje usługi związane z geometrią kół. Geometria kół to procedura, która polega na odpowiednim ustawieniu kół w pojeździe. Dzięki odpowiedniemu ustawieniu kół można poprawić
           trakcję, stabilność i komfort jazdy. W ramach usługi geometrii kół, sprawdzamy i regulujemy m.in. kąty nachylenia, konwergencje oraz nacinanie kół. W naszym warsztacie samochodowym -
           geometria kół cennik jest stały i dostępny dla wszystkich klientów.
@@ -180,7 +180,7 @@
     <div class="flex items-center border-l-8 border-red-500 bg-gray-100 p-4 shadow-md mr-4 ml-4 my-4">
       <div class="ml-4">
         <h2 class="text-lg font-bold">Zbieżność kół cena jest przestępna</h2>
-        <p class="text-gray-600">
+        <p class="text-black">
           Usługa regulacji i zbieżność kół cena jest przestępna dla każdego klienta który jest obsługiwany w naszym warsztacie. Ze względu na to, że zbieżność kół to jeden z parametrów regulacji
           geometrii samochodowej nasz serwis samochodowy w Warszawie posługuje według naszego cenniku a koszt ustawienia zbieżności będzie finalizowany jak zrobimy pomiar i jak podregulujemy wymagane
           koła. Standardowo zbieżność kół cena przy regulacji przędnej osi wynosi od 160 zł do 200 zł
@@ -188,10 +188,58 @@
       </div>
     </div>
     <!--block-5 end-->
+
+    <!--block-6 Paralax start-->
+    <!-- Контейнер с параллакс-эффектом -->
+
+    <!-- Секция с параллакс-эффектом -->
+    <section class="relative bg-red-600 bg-opacity-30 h-screen mt-20">
+      <!-- Параллакс изображение -->
+      <div
+        class="absolute inset-0 w-full h-full bg-cover bg-center"
+        style="background-image: url('/assets/paralax3.jpg'); z-index: -1;"
+      ></div>
+    
+      <!-- Контейнер с текстом -->
+      <div class="container mx-auto h-full flex items-center justify-start">
+        <div class="text-left text-white space-y-4 p-4 md:w-1/2">
+          <h1 class="text-3xl md:text-5xl font-bold leading-tight">
+            Geometria kół 3D cena przy regulacji 4 kół 250 zł
+          </h1>
+          <p class="text-lg md:text-xl">
+            Promocja obejmuje regulację 4 kół oraz wykonanie geometrii kół 3D cena takiej promocji finalizuje koszt w 250 zł. Ta usługa zapewni optymalne ustawienie kół w samochodzie, dzięki czemu poprawi się komfort jazdy, stabilność oraz trwałość opon.
+          </p>
+          <p class="text-sm md:text-lg">
+            Samochody, które mieli regulację geometrii kół w naszym warsztacie i okazało się, że zawieszenie samochodu wymaga naprawy, to po zgłoszeniu na korektę ustawienia geometrii kół cena wygląda trochę inaczej (nie pobieramy opłaty drugi раз за выполненный pomiar).
+          </p>
+          <!-- Кнопка -->
+          <a href="tel:+48694095867" class="inline-block bg-white bg-opacity-20 hover:bg-opacity-40 text-white font-bold py-3 px-6 rounded-md border border-white">
+            Umów Wizytę
+          </a>
+        </div>
+      </div>
+    </section>
+    
+
+    <!--block-6 Paralax End-->
+
+    <div class="flex items-center border-l-8 border-red-500 bg-gray-100 p-4 shadow-md mr-4 ml-4 my-4">
+      <div class="ml-4">
+        <h2 class="text-lg font-bold">Zbieżność kół cena jest przestępna</h2>
+        <p class="text-black">
+          Usługa regulacji i zbieżność kół cena jest przestępna dla każdego klienta który jest obsługiwany w naszym warsztacie. Ze względu na to, że zbieżność kół to jeden z parametrów regulacji
+          geometrii samochodowej nasz serwis samochodowy w Warszawie posługuje według naszego cenniku a koszt ustawienia zbieżności będzie finalizowany jak zrobimy pomiar i jak podregulujemy wymagane
+          koła. Standardowo zbieżność kół cena przy regulacji przędnej osi wynosi od 160 zł do 200 zł
+        </p>
+      </div>
+    </div>
+
+
   </body>
   <style>
     body {
       font-family: "Kumbh Sans", sans-serif;
     }
   </style>
+  <script src="script.js"></script>
 </html>
