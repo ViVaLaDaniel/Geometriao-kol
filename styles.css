@@ -2,12 +2,17 @@ body {
   font-family: "Kumbh Sans", sans-serif;
 }
 
-@keyframes marquee {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
-}
 
-.animate-marquee {
-  animation: marquee 20s linear infinite;
-}
+  @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-50%); } /* Изменяем на -50% для плавной прокрутки */
+  }
+
+  .animate-marquee {
+      animation: marquee 20s linear infinite; /* Увеличьте время, чтобы анимация была плавной */
+  }
+
+  .flex.animate-marquee {
+      width: calc(200%); /* Увеличиваем ширину, чтобы вместить оба списка */
+  }
 
