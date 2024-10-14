@@ -23,7 +23,7 @@ body {
 .flex.animate-marquee {
   width: calc(200%); /* Увеличиваем ширину, чтобы вместить оба списка */
 }
-@media (max-width: 524px) {
+/*@media (max-width: 524px) {
   a {
     right: 1rem; /* Уменьшаем правый отступ */
     bottom: 1rem; /* Уменьшаем нижний отступ */
@@ -35,4 +35,4 @@ body {
     right: 0.5rem; /* Еще меньше отступы для сверхмаленьких экранов */
     bottom: 0.5rem;
   }
-}
+}*/
