@@ -1,18 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+
 body {
   font-family: "Kumbh Sans", sans-serif;
 }
 
-
-  @keyframes marquee {
-      0% { transform: translateX(100%); }
-      100% { transform: translateX(-50%); } /* Изменяем на -50% для плавной прокрутки */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
   }
+  100% {
+    transform: translateX(-50%);
+  } /* Изменяем на -50% для плавной прокрутки */
+}
 
-  .animate-marquee {
-      animation: marquee 20s linear infinite; /* Увеличьте время, чтобы анимация была плавной */
-  }
+.animate-marquee {
+  animation: marquee 20s linear infinite; /* Увеличьте время, чтобы анимация была плавной */
+}
 
-  .flex.animate-marquee {
-      width: calc(200%); /* Увеличиваем ширину, чтобы вместить оба списка */
-  }
-
+.flex.animate-marquee {
+  width: calc(200%); /* Увеличиваем ширину, чтобы вместить оба списка */
+}
