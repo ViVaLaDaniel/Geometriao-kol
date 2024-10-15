@@ -15,72 +15,32 @@
 
     <title>Geometria Kół</title>
   </head>
-  <body class="bg-white " style="font-family: 'Kumbh Sans', sans-serif">
+  <body class="bg-white" style="font-family: 'Kumbh Sans', sans-serif">
     <!--navbar start-->
     <nav class="bg-white py-4 text-center">
       <div class="flex justify-between">
         <div class="flex items-center">
           <span class="text-black font-bold ml-6">Geometria Kół</span>
         </div>
-        <ul class="text-black flex justify-between items-center">
-          <li class="mr-6 flex-1 text-center"><a href="#" class="text-white hover:text-gray-300">Cennik</a></li>
-          <li class="mr-6 flex-1 text-center"><a href="#" class="text-white hover:text-gray-300">Geometria Kół-Model</a></li>
-          <li class="mr-6 flex-1 text-center"><a href="#" class="text-white hover:text-gray-300">Uslugi</a></li>
-          <li class="mr-6 flex-1 text-center"><a href="#" class="text-white hover:text-gray-300">O Nas</a></li>
-        </ul>
+        <!--<ul class="text-black flex justify-between items-center">
+          <li class="mr-6 flex-1 text-center"><a href="#" class="text-black hover:text-gray-300">Cennik</a></li>
+          <li class="mr-6 flex-1 text-center"><a href="#" class="text-black hover:text-gray-300">Geometria Kół-Model</a></li>
+          <li class="mr-6 flex-1 text-center"><a href="#" class="text-black hover:text-gray-300">Uslugi</a></li>
+          <li class="mr-6 flex-1 text-center"><a href="#" class="text-black hover:text-gray-300">O Nas</a></li>
+        </ul>-->
       </div>
     </nav>
     <!--navbar end-->
 
 
 
-    <div class="container mx-auto p-4 text-black">
-      <div class="bg-white rounded-lg shadow-md p-4 md:p-6 lg:p-8 xl:p-10">
-        <div class="flex justify-between flex-wrap md:flex-nowrap lg:flex-wrap xl:flex-nowrap">
-          <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4">
-            <h2 class="font-bold mb-4 text-center text-2xl md:text-3xl lg:text-6xl">Geometria kół Cena</h2>
-            <p class="text-base md:text-xl lg:text-3xl text-center">
-              Kontrola zbieżności zazwyczaj kosztuje <span class="text-black font-bold">120 zł</span>, a w przypadku regulacji dodaje się <span class="text-black font-bold">40 zł</span> за каждое
-              колесо, которое требует настройки. <br />Czas wykonania geometrii kół w Poznaniu wynosi <span class="text-black font-bold">od 30 min</span>. <br /><span class="text-black font-bold"
-                >Koszt regulacji</span
-              >
-              зависит от числа колес, которые требуют коррекции.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="mx-6 mt-4 md:mt-6 lg:mt-8 xl:mt-10 text-center flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4">
-        <!-- Кнопка для звонка -->
-        <a
-          href="tel:+48798773827"
-          class="bg-green-500 text-black-500 border-2 border-black-500 hover:bg-red-500 hover:text-white font-bold py-4 px-4 rounded inline-block w-full sm:w-auto transition duration-1000"
-        >
-          Umów na Wizytę <i class="fa-solid fa-phone-flip transition duration-1000 hover:text-white"></i>
-        </a>
-        <!-- Кнопка для карты -->
-        <a
-          href="https://www.google.com/maps/place/ROMAKS+warsztat+samochodowy/"
-          target="_blank"
-          class="bg-white text-red-500 border-2 border-red-500 hover:bg-red-500 hover:text-white font-bold py-4 px-4 rounded inline-block w-full sm:w-auto transition duration-1000"
-        >
-          Mapa Dojazdu <i class="fa-regular fa-map transition duration-1000 hover:text-white"></i>
-        </a>
-      </div>
-
-      <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 md:p-6 lg:p-8 xl:p-10">
-        <img src="./assets/geometria-kol.jpg" alt="giometri" loading="lazy" class="h-full w-full object-cover" />
-      </div>
-    </div>
-
     <!-- Фиксированная кнопка телефона -->
-    <a
-      href="tel:+48798773827"
-      class="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300 z-50 md:p-6 md:text-2xl sm:p-3 sm:text-lg"
-      style="min-width: 40px; min-height: 40px"
-    >
-      <i class="fas fa-phone-alt"></i>
-    </a>
+    <div class="button-container">
+      <a id="callButton" href="tel:+48 881 130 065" class="button">
+        <i class="fas fa-phone-alt"></i>
+      </a>
+      <div class="waves" id="waveEffect"></div>
+    </div>
 
     <!--bloc-1 start-->
     <div class="container mx-auto p-4 text-black">
@@ -101,10 +61,10 @@
       <!--button contact start-->
       <div class="mx-6 mt-4 md:mt-6 lg:mt-8 xl:mt-10 text-center flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4">
         <a
-          href="tel:+48798773827"
-          class="bg-green-500 text-black-500 border-2 border-black-500 hover:bg-red-500 hover:text-white font-bold py-4 px-4 rounded inline-block w-full sm:w-auto transition duration-1000"
+          href="tel:+48 881 130 065"
+          class="bg-red-500 text-black-500 border-4 border-black-700 hover:bg-red-500 hover:text-white font-bold py-4 px-4 rounded inline-block w-full sm:w-auto transition duration-1000"
         >
-          Umów na Wizytę <i class="fas fa-phone-alt transition duration-1000 hover:text-white"></i>
+          Umów na Wizytę <i class="fas fa-phone-alt transition duration-1000 hover:text-white px-4"></i>
         </a>
         <!--button contact start-->
 
@@ -114,7 +74,7 @@
           target="_blank"
           class="bg-white text-red-500 border-2 border-red-500 hover:bg-red-500 hover:text-white font-bold py-4 px-4 rounded inline-block w-full sm:w-auto transition duration-1000"
         >
-          Mapa Dojazdu <i class="fa-regular fa-map transition duration-1000 hover:text-white"></i>
+          Mapa Dojazdu <i class="fa-regular fa-map transition duration-1000 hover:text-white px-4"></i>
         </a>
       </div>
       <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 md:p-6 lg:p-8 xl:p-10">
@@ -137,26 +97,26 @@
         </p>
 
         <div class="w-full sm:w-3/4 lg:w-1/2 mx-auto flex items-start mb-4">
-          <i class="fa-solid fa-circle-check text-red-600 text-base mr-4"></i>
+          <i class="fa-solid fa-circle-check text-red-600 text-xl mr-4"></i>
           <p class="w-full text-left text-black text-base md:text-xl lg:text-3xl">
             <span class="font-bold">Pomiar zbieżności oraz kąta pochylenia kół</span> (Usługa pomiaru zbieżności obejmuje wyłącznie testy, bez przeprowadzania pełnej geometrii kół, oraz przygotowania
             raportu z wynikami pomiarów zbieżności). - <span class="text-black font-bold">120 zł</span>
           </p>
         </div>
         <div class="w-full sm:w-3/4 lg:w-1/2 mx-auto flex items-start mb-4">
-          <i class="fa-solid fa-circle-check text-red-500 text-base mr-4" style="color: #ff0000"></i>
+          <i class="fa-solid fa-circle-check text-red-500 text-xl mr-4" style="color: #ff0000"></i>
           <p class="w-full text-left text-black text-base md:text-xl lg:text-3xl">
             <span class="font-bold text-red-600">Pomiar 3D to niezbędny krok, który należy wykonać przed przystąpieniem do regulacji geometrii kół.</span>
           </p>
         </div>
 
         <div class="w-full sm:w-3/4 lg:w-1/2 mx-auto flex items-start mb-4">
-          <i class="fa-solid fa-circle-check text-red-600 text-base mr-4"></i>
+          <i class="fa-solid fa-circle-check text-red-600 text-xl mr-4"></i>
           <p class="w-full text-left text-black text-base md:text-xl lg:text-3xl"><span> Regulacja i ustawienie geometrii jednego koła</span> - <span class="text-black font-bold">40 zł</span></p>
         </div>
 
         <div class="w-full sm:w-3/4 lg:w-1/2 mx-auto flex items-start mb-4">
-          <i class="fa-solid fa-circle-check text-red-600 text-base mr-4"></i>
+          <i class="fa-solid fa-circle-check text-red-600 text-xl mr-4"></i>
           <p class="w-full text-left text-black text-base md:text-xl lg:text-3xl">
             <span class="font-bold text-black">Zbieżność kół cena, oraz regulacja pochylenia - przednia oś</span> - (ustawiamy geometrie, oraz zbieżność 2 kół na przedniej osi) -
             <span class="text-black font-bold">80 zł</span>
@@ -164,7 +124,7 @@
         </div>
 
         <div class="w-full sm:w-3/4 lg:w-1/2 mx-auto flex items-start mb-4">
-          <i class="fa-solid fa-circle-check text-red-600 text-base mr-4"></i>
+          <i class="fa-solid fa-circle-check text-red-600 text-xl mr-4"></i>
           <p class="w-full text-left text-black text-base md:text-xl lg:text-3xl">
             <span class="font-bold text-black">Zbieżność kół cena, oraz regulacja pochylenia - tylna oś</span> - (ustawiamy geometrie, oraz zbieżność 2 kół na tylnej osi) -
             <span class="text-black font-bold">80 zł</span>
@@ -172,7 +132,7 @@
         </div>
 
         <div class="w-full sm:w-3/4 lg:w-1/2 mx-auto flex items-start mb-4">
-          <i class="fa-solid fa-circle-check text-red-600 text-base mr-4"></i>
+          <i class="fa-solid fa-circle-check text-red-600 text-xl mr-4"></i>
           <p class="w-full text-left text-black text-base md:text-xl lg:text-3xl">
             <span class="font-bold text-black">Geometria kół cena, regulacja zbieżności oraz pochylenia kół</span> - przód i tył - (ustawiamy geometrie, oraz zbieżność 4 koła na tylnej osi, przedniej
             osi) - <span class="text-black font-bold">160 zł</span>
@@ -180,7 +140,7 @@
         </div>
 
         <div class="w-full sm:w-3/4 lg:w-1/2 mx-auto flex items-start mb-4">
-          <i class="fa-solid fa-circle-check text-red-600 text-base mr-4"></i>
+          <i class="fa-solid fa-circle-check text-red-600 text-xl mr-4"></i>
           <p class="w-full text-left text-black text-base md:text-xl lg:text-3xl">
             <span class="text-red-600 font-bold"
               >Przy regulacji czterech kół (usługa obejmuje wykonania pomiaru, oraz ustawienia zbieżności kół i pochylenia kół) —
@@ -190,7 +150,7 @@
         </div>
 
         <div class="w-full sm:w-3/4 lg:w-1/2 mx-auto flex items-start mb-4">
-          <i class="fa-solid fa-circle-check text-red-600 text-base mr-4"></i>
+          <i class="fa-solid fa-circle-check text-red-600 text-xl mr-4"></i>
           <p class="w-full text-left text-black text-base md:text-xl lg:text-3xl">
             <span class="text-black font-bold">Wyprzedzenie kół</span> - regulacja wyprzedzenia - <span class="text-black font-bold">120 zł</span> za godzinę (koszt zależy od tego, ile czasu
             obsługiwany model samochodu wymaga na taką regulację).
@@ -202,7 +162,7 @@
 
     <!--block-3 start -->
     <!--Задачаи Уникалезоровать Текс-->
-    <div class="bg-white rounded-lg shadow-md p-4 md:p-6 lg:p-8 xl:p-10">
+    <div class="bg-white rounded-lg shadow-md w-full flex flex-col p-6 md:p-6 lg:p-8 xl:p-10">
       <h2 class="text-red-600 font-bold mb-4 text-center text-lg md:text-4xl lg:text-6xl">ile kosztuje geometria kół Poznan</h2>
       <div>
         <p>
@@ -217,11 +177,11 @@
     <!--Задачаи Уникалезоровать Текс-->
     <div class="flex items-center border-l-8 border-sky-500 bg-gray-100 p-4 shadow-md mr-4 ml-4 my-4">
       <div class="ml-4">
-        <h2 class="text-lg font-bold">Geometria kół cennik jest stały dla wszystkich</h2>
+        <h2 class="text-2xl font-bold">Stały cennik usługi geometrii kół</h2>
         <p class="text-black">
-          Nasz warsztat oferuje usługi związane z geometrią kół. Geometria kół to procedura, która polega na odpowiednim ustawieniu kół w pojeździe. Dzięki odpowiedniemu ustawieniu kół można poprawić
-          trakcję, stabilność i komfort jazdy. W ramach usługi geometrii kół, sprawdzamy i regulujemy m.in. kąty nachylenia, konwergencje oraz nacinanie kół. W naszym warsztacie samochodowym -
-          geometria kół cennik jest stały i dostępny dla wszystkich klientów.
+          W naszym warsztacie wykonujemy precyzyjne usługi związane z regulacją geometrii kół. Geometria kół to proces, który polega na dokładnym dopasowaniu położenia kół w pojeździe, co wpływa na
+          optymalne prowadzenie auta. Odpowiednie ustawienie kół poprawia przyczepność, stabilność oraz komfort jazdy. W trakcie usługi sprawdzamy i regulujemy takie parametry, jak kąty pochylenia
+          kół, zbieżność oraz ich nacięcie. Cennik usług geometrii kół w naszym warsztacie jest niezmienny i klarowny, dostępny dla wszystkich naszych klientów.
         </p>
       </div>
     </div>
@@ -230,35 +190,49 @@
     <!--block-5 start-->
     <div class="flex items-center border-l-8 border-red-500 bg-gray-100 p-4 shadow-md mr-4 ml-4 my-4">
       <div class="ml-4">
-        <h2 class="text-lg font-bold">Zbieżność kół cena jest przestępna</h2>
+        <h2 class="text-2xl font-bold">Atrakcyjna cena regulacji zbieżności kół</h2>
         <p class="text-black">
-          Usługa regulacji i zbieżność kół cena jest przestępna dla każdego klienta który jest obsługiwany w naszym warsztacie. Ze względu na to, że zbieżność kół to jeden z parametrów regulacji
-          geometrii samochodowej nasz serwis samochodowy w Warszawie posługuje według naszego cenniku a koszt ustawienia zbieżności będzie finalizowany jak zrobimy pomiar i jak podregulujemy wymagane
-          koła. Standardowo zbieżność kół cena przy regulacji przędnej osi wynosi od 160 zł do 200 zł
+          Usługa regulacji zbieżności kół w naszym warsztacie jest dostępna w przystępnej cenie dla każdego klienta. Ponieważ zbieżność kół to jeden z kluczowych elementów regulacji geometrii pojazdu,
+          <a
+            href="https://www.facebook.com/romaks.warsztat.samochodowy"
+            class="text-bold relative inline-block text-black after:absolute after:left-0 after:bottom-0 after:h-[6px] after:w-full after:bg-red-600 after:transition-all after:duration-300 after:z-10 hover:after:h-full hover:after:opacity-90 text-bold"
+            ><strong><span class="relative z-20">nasz warsztat w Poznanie</span></strong></a
+          >
+          działa zgodnie z ustalonym cennikiem. Ostateczny koszt ustawienia zbieżności zależy od pomiaru i niezbędnej regulacji kół. Standardowa <strong>cena za regulację zbieżności</strong> na
+          przedniej osi wynosi <strong>od 160 zł do 200 zł</strong> , co czyni naszą ofertę konkurencyjną na rynku.
         </p>
       </div>
     </div>
     <!--block-5 end-->
 
     <!--block-6 Paralax start-->
-    <section class="relative bg-red-600 bg-opacity-30 h-screen mt-20">
+    <section class="relative bg-red-600 bg-opacity-35 h-screen mt-20">
       <!-- Параллакс изображение -->
       <div class="absolute inset-0 w-full h-full bg-cover bg-center" style="background-image: url('/assets/paralax3.jpg'); z-index: -1"></div>
 
       <!-- Контейнер с текстом -->
-      <div class="container mx-auto h-full flex items-center justify-start">
-        <div class="text-left text-white space-y-4 p-4 md:w-1/2">
-          <h1 class="text-3xl md:text-5xl font-bold leading-tight">Geometria kół 3D cena przy regulacji 4 kół 250 zł</h1>
+      <div class="container mx-auto h-full flex items-center justify-center">
+        <div class="text-left text-white space-y-4 p-4 md:w-auto">
+          <h1 class="text-3xl md:text-5xl font-bold leading-tight">Cena za regulację geometrii 3D dla czterech kół w naszym warsztacie wynosi 250 zł</h1>
           <p class="text-lg md:text-xl">
-            Promocja obejmuje regulację 4 kół oraz wykonanie geometrii kół 3D cena takiej promocji finalizuje koszt w 250 zł. Ta usługa zapewni optymalne ustawienie kół w samochodzie, dzięki czemu
-            poprawi się komfort jazdy, stabilność oraz trwałość opon.
+            Promocja obejmuje regulację czterech kół oraz wykonanie geometrii 3D, a koszt tej usługi wynosi 250 zł. Zapewniamy optymalne ustawienie kół, co poprawi komfort jazdy, stabilność oraz
+            wydłuży trwałość opon. Nasza doświadczona ekipa korzysta z profesjonalnego sprzętu, aby zagwarantować precyzyjną regulację. To świetna okazja, by zadbać o swoje auto i cieszyć się
+            bezpieczną, komfortową jazdą. Skorzystaj z promocji już dziś!
           </p>
           <p class="text-sm md:text-lg">
-            Samochody, które mieli regulację geometrii kół w naszym warsztacie i okazało się, że zawieszenie samochodu wymaga naprawy, to po zgłoszeniu na korektę ustawienia geometrii kół cena wygląda
-            trochę inaczej (nie pobieramy opłaty drugi раз за выполненный pomiar).
+            Samochody które mieli regulację geometrii kół w naszym warsztacie i okazało się, że zawieszenie samochodu wymaga naprawy, to wtedy po zgłoszeniu na korektę ustawienie geometrii kół cena
+            wygląda trochę inaczej (nie pobieramy opłaty drugi raz za wykonany pomiar)
           </p>
           <!-- Кнопка -->
-          <a href="tel:+48694095867" class="inline-block bg-white bg-opacity-20 hover:bg-opacity-40 text-white font-bold py-3 px-6 rounded-md border border-white"> Umów Wizytę </a>
+          <div class="mx-6 mt-4 md:mt-6 lg:mt-8 xl:mt-10 text-center flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4">
+            <a
+              href="https://www.google.com/maps/place/ROMAKS+warsztat+samochodowy/@52.4080279,16.7798512,17z/data=!3m1!4b1!4m5!3m4!1s0x470445a0f65ea4a1:0xb23d6bbd39f56e5f!8m2!3d52.4080279!4d16.7820372"
+              target="_blank"
+              class="bg- text-white border-2 border-white hover:bg-white hover:text-black font-bold py-4 px-4 rounded inline-block w-full sm:w-auto transition duration-1000"
+            >
+              Umów na Wizytę <i class="fa-regular fa-map px-2 transition duration-1000 hover:text-white"></i>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -270,7 +244,7 @@
         <div class="flex justify-center">
           <div class="card w-full md:w-2/3 bg-white shadow-lg rounded-lg p-6">
             <div class="text-center">
-              <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">Z czego składa się cena geometrii kół?</h2>
+              <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">Co wpływa na cenę geometrii kół?</h2>
               <div class="link-wrap">
                 <p class="text-lg font-bold text-gray-900">
                   <a
@@ -289,13 +263,13 @@
     <!--block-7 end-->
 
     <!--block-8 start -->
-    <section class="py-8 bg-white">
-      <div class="container mx-2">
+    <section class="py-8 bg-white flex flex-col mx-auto p-6 w-full">
+      <div class="container mx-auto">
         <div class="flex justify-center">
           <div class="w-full">
             <p class="text-lg font-normal text-black mb-4">
-              Geometria kół 3D cena i koszt ustawienia zbieżności składa się z kosztów sprawdzenia, regulacji i ewentualnego korekty ustawienia geometrii kół pojazdu, a także z kosztów wykonania
-              zbieżności kół. Części zamienne i materiały potrzebne do wykonania usługi są wliczone w koszt.
+              Koszt usługi geometrii kół 3D oraz ustawienia zbieżności obejmuje kilka elementów, w tym opłaty za sprawdzenie, regulację i ewentualne korekty ustawienia geometrii kół w pojeździe. W
+              cenę wliczone są również części zamienne oraz materiały niezbędne do przeprowadzenia usługi.
             </p>
           </div>
         </div>
@@ -304,26 +278,27 @@
     <!--block-8 end -->
 
     <!--block-9 start img -->
-    <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 md:p-6 lg:p-8 xl:p-10">
+    <div class="flex flex-col mx-auto p-6 w-full md:w-1/2 lg:w-1/3 xl:w-1/4 md:p-6 lg:p-8 xl:p-10">
       <img src="./assets/geometria-kol.jpg" alt="giometria kol" loading="lazy" class="h-full w-full object-cover" />
     </div>
     <!--block-9 end img -->
 
     <!--block-10 start -->
-    <div class="text-left p-4 md:p-8 bg-white rounded-lg shadow-lg">
-      <h2 class="text-2xl md:text-4xl font-bold mb-4 text-center">
-        <strong>Cena zbieżność kół</strong>
+    <div class="text-center w-full flex flex-col lg:w-8/12 text-col p-8 md:p-8 bg-white rounded-lg shadow-lg">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">
+        <strong>Cena regulacji zbieżności kół</strong>
       </h2>
       <p class="text-lg md:text-2xl font-semibold mb-4 text-center text-red-600">ile kosztuje zbieżność w warsztacie - Express</p>
-      <p class="text-base md:text-xl leading-relaxed">
+      <p class="text-base text-left md:text-xl leading-relaxed">
         <strong
-          >Jeśli samochód jest niestabilny podczas jazdy i opony nierówno się zużywają, możliwą przyczyną może być nieprawidłowe ustawienie zbieżności lub geometrii kół. Te dwa czynniki mają duży
-          wpływ na komfort i bezpieczeństwo jazdy, dlatego ważne jest, aby były odpowiednio skonfigurowane.</strong
+          >Jeśli samochód wykazuje niestabilność podczas jazdy, a opony zużywają się nierówno, może to wskazywać na nieprawidłowe ustawienie zbieżności lub geometrii kół. Te elementy mają istotny
+          wpływ na komfort i bezpieczeństwo prowadzenia pojazdu, dlatego ich właściwe skonfigurowanie jest kluczowe. Dobrze ustawione koła poprawiają stabilność, co przekłada się na lepsze osiągi i
+          mniejsze ryzyko uszkodzeń opon.</strong
         ><br /><br />
-        Cena zbieżność kół - wykonanie tej procedury waha się od 160 zł do 250 zł, w zależności od ilości kół, które będziemy regulować. Ile kosztuje zbieżność obejmuje zarówno pomiar zbieżności, jak
-        i korektę ewentualnych odchyleń. Jeśli zbieżność okaże się prawidłowa, sam pomiar kosztuje 120 zł. Ustawienie zbieżności jednego koła kosztuje 40 zł.<br /><br />
-        Proces ustawienia zbieżności trwa około od 30 min. do godziny. Całkowity koszt wykonania geometrii, wraz z ustawieniem zbieżności i kątów sworznia zwrotnicy na przedniej i tylnej osi, wynosi
-        około 160 zł - 250 zł.
+        Cena wykonania regulacji zbieżności kół oscyluje między 160 zł a 250 zł, co zależy od liczby kół wymagających korekty. W ramach tej usługi zawarte są zarówno pomiar zbieżności, jak i
+        ewentualne poprawki. Jeśli pomiar wskaże, że zbieżność jest właściwa, jego koszt wynosi około 120 zł. Ustawienie zbieżności pojedynczego koła to zazwyczaj dodatkowy wydatek rzędu 40 zł.<br /><br />
+        Proces regulacji zbieżności zajmuje zazwyczaj od 30 minut do godziny. Całkowity koszt wykonania geometrii, który obejmuje ustawienie zbieżności oraz kąty sworznia zwrotnicy na przedniej i
+        tylnej osi, wynosi około 160 zł do 250 zł.
       </p>
     </div>
     <!--block-10 end -->
@@ -335,7 +310,7 @@
           <div class="w-full lg:w-4/12 title-col">
             <strong><h2 class="text-left text-bold text-2xl font-xl mb-3 text-red-600">Cena geometrii kół w Poznaniu</h2></strong>
           </div>
-          <div class="w-full lg:w-8/12 text-col">
+          <div class="w-full flex flex-col lg:w-8/12 text-col">
             <p class="text-lg text-gray-800 mb-0">
               <strong>
                 <a
@@ -344,19 +319,24 @@
                   ><span class="relative z-20">Geometria kół </span></a
                 ></strong
               >
-              to jedna z kluczowych usług serwisowych, które powinny być regularnie przeprowadzane, aby zapewnić bezpieczeństwo i efektywność pojazdu. W warsztacie Auto Serwis w 2024 roku
-              <strong>cena geometrii kół</strong> pozostaje stabilna i atrakcyjna.<br />
-              Komputerowa geometria kół to precyzyjny proces ustawienia kół zgodnie z zaleceniami producenta. Odpowiednia geometria jest kluczowa dla stabilności jazdy, równomiernego zużycia opon i
-              optymalnej przyczepności do nawierzchni. Regularne kontrole oraz regulacje geometrii kół mogą znacznie przedłużyć żywotność opon oraz zmniejszyć ryzyko wypadków na drodze.<br />
-              W 2024 roku warsztat Auto Serwis w Poznaniu nadal oferuje profesjonalne usługi geometrii kół, wykorzystując nowoczesny sprzęt i wysoko wykwalifikowany personel. Dzięki precyzyjnym
-              pomiarom klienci mogą być pewni, że ich pojazdy zostaną odpowiednio wyregulowane, co przekłada się na komfort i bezpieczeństwo podczas jazdy.<br />
-              <strong>Ceny za geometrię kół w Poznaniu</strong> w warsztacie Auto Serwis w 2024 roku są konkurencyjne, co sprawia, że usługi te są dostępne dla szerokiego grona klientów. Regularne
-              promocje oraz zniżki zachęcają do dbania o stan geometrii kół i innych elementów pojazdu, co pozytywnie wpływa na ich kondycję oraz bezpieczeństwo na drodze.<br />
-              Jeśli zauważysz problemy z prowadzeniem pojazdu, nierównomierne zużycie opon lub inne objawy niewłaściwej geometrii kół, skorzystaj z usług warsztatu Auto Serwis. Profesjonalna obsługa,
-              konkurencyjne ceny oraz nowoczesne urządzenia pomiarowe sprawią, że Twój samochód będzie gotowy do dalszej jazdy bez obaw o jego stan techniczny.<br />
-              Zadbaj o swoje bezpieczeństwo i komfort jazdy dzięki regularnym kontrolom geometrii kół w warsztacie Auto Serwis. To pomoże uniknąć niepotrzebnych wydatków związanych z szybkim
-              zużywaniem się opon i zminimalizuje ryzyko niebezpiecznych sytuacji na drodze. Serdecznie zapraszamy do warsztatu Auto Serwis, gdzie bezpieczeństwo i jakość są zawsze na pierwszym
-              miejscu.<br />
+              to jedna z kluczowych usług serwisowych, które powinny być systematycznie wykonywane, aby zapewnić bezpieczeństwo i efektywność pojazdu. W warsztacie Express w 2024 roku
+              <strong>cena za tę usługę</strong> pozostaje na stałym, atrakcyjnym poziomie.<br />
+              Komputerowa geometria kół polega na precyzyjnym ustawieniu kół zgodnie z parametrami ustalonymi przez producenta pojazdu. Właściwe ustawienie geometrii ma istotne znaczenie dla
+              stabilności jazdy, równomiernego zużycia opon oraz przyczepności do nawierzchni. Regularne sprawdzanie i dostosowywanie geometrii kół może znacząco wydłużyć trwałość opon i zmniejszyć
+              ryzyko wystąpienia wypadku drogowego. Dzięki tym zabiegom kierowcy mogą cieszyć się lepszym komfortem jazdy i większym bezpieczeństwem na drodze.<br />
+
+              W 2024 roku warsztat Auto Serwis w Poznaniu kontynuuje świadczenie profesjonalnych usług geometrii kół, korzystając z nowoczesnych technologii i doświadczonego personelu. Dzięki
+              precyzyjnym pomiarom klienci mogą być pewni, że ich pojazdy zostaną dokładnie wyregulowane, co znacząco wpływa na komfort jazdy oraz bezpieczeństwo na drodze. Regularne wykonywanie
+              geometrii kół to ważny element konserwacji pojazdu, który poprawia jego stabilność i przedłuża żywotność opon, zapewniając pewniejszą i bardziej płynną jazdę.<br />
+              <strong>Ceny za geometrię kół w Poznaniu</strong> w 2024 roku warsztat Auto Serwis oferuje konkurencyjne ceny, co sprawia, że ich usługi są przystępne dla szerokiego grona klientów.
+              Dzięki regularnym promocjom i zniżkom, klienci mają dodatkową motywację do dbania o geometrię kół oraz inne elementy pojazdu, co przekłada się na lepszy stan techniczny pojazdu oraz
+              wyższe bezpieczeństwo na drodze. Takie podejście sprawia, że właściciele samochodów mogą regularnie korzystać z serwisu, zapewniając sobie większy komfort i bezpieczeństwo jazdy, a
+              jednocześnie oszczędzając na naprawach.<br />
+              Jeśli zauważysz trudności w prowadzeniu pojazdu, nierównomierne zużycie opon lub inne symptomy wskazujące na nieprawidłową geometrię kół, skorzystaj z usług Auto Serwis. Profesjonalna
+              obsługa, atrakcyjne ceny oraz nowoczesny sprzęt diagnostyczny zapewnią, że Twój pojazd zostanie odpowiednio wyregulowany, co pozwoli na bezpieczną i bezproblemową jazdę bez obaw o stan
+              techniczny samochodu.<br />
+              Zadbaj o swoje bezpieczeństwo i komfort jazdy, regularnie kontrolując geometrię kół w Auto Serwis. Regularne przeglądy pozwolą uniknąć nadmiernego zużycia opon i zredukować ryzyko
+              niebezpiecznych sytuacji na drodze. Zapraszamy do warsztatu Auto Serwis, gdzie priorytetem są jakość usług i bezpieczeństwo kierowców, zapewniając najwyższy standard obsługi.<br />
             </p>
           </div>
         </div>
@@ -507,16 +487,12 @@
     <!--block-16 end -->
 
     <!--futer-17 start -->
-    <section class="map1 cid-tixmaUm5D5 py-8" id="map01-2i">
+    <section class="map1 cid-tixmaUm5D5 w-full py-8" id="map01-2i">
       <div class="container mx-auto">
         <h2 class="text-2xl font-bold text-center mb-4">Lokalizacja warsztatu</h2>
         <div class="google-map">
-          <iframe
-            frameborder="0"
-            style="border: 0; width: 100%; height: 450px"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB7QWkvlxV39ZsyKvhZRjPGVqlJFvxxNkw&q=ROMAKS+warsztat+samochodowy"
-            allowfullscreen
-          >
+          <iframe frameborder="0" style="border: 0; width: 100%; height: 450px">
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB7QWkvlxV39ZsyKvhZRjPGVqlJFvxxNkw&q=ROMAKS+warsztat+samochodowy" allowfullscreen >
           </iframe>
         </div>
       </div>
@@ -524,7 +500,7 @@
     <!--futer-17 end -->
 
     <!--footer-->
-    <section class="bg-black text-white py-10 w-full md:w-1/2 lg:w-1/2 my-auto px-4 text-left">
+    <section class="bg-black text-white py-10 px-4 w-full md:w-1/2 lg:w-full my-auto md:w-full text-left">
       <div class="container mx-auto">
         <div class="row">
           <div class="col-12">
@@ -545,7 +521,7 @@
                 62-081
               </div>
               <div class="mt-2">
-                <strong  >Kontakt:</strong>
+                <strong>Kontakt:</strong>
                 <div>
                   <a
                     href="tel:+48 881 130 065"
@@ -671,5 +647,5 @@
       width: calc(200%); /* Увеличиваем ширину, чтобы вместить оба списка */
     }
   </style>
-  <script src="script.js"></script>
+  <script src="scripts.js"></script>
 </html>
